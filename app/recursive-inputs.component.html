@@ -1,15 +1,18 @@
-<div *ngIf="schema" class="container">
+<div *ngIf="schema" class="container" style="padding:0px; font:Helvetica, Arial, sans-serif">
 
-  <div>
-    <h2> 
+  <div style="background-color:#660000;color:white;padding: 20px">
+    <h2 style="font-weight:bold"> 
       {{classItem.label}}
     </h2>
-    <div> 
+    <div style="font-family: 'Lucida Grande' , 'Lucida Sans Unicode' , Verdana, Tahoma, Arial, sans-serif; font-size:12px;"> 
       {{classItem.comment}}
     </div>
-  <div style="width: 50%; min-height: 500px; float: left;">
-    <render-tree [itemId]="itemId" [schema]="schema" [data]="data" [counter]="0"></render-tree>
   </div>
-  <textarea style="width: 49%; height: 500px;  float: left;">{{jsonld | json}}</textarea>
-</div>
+
+  <div>
+    <div style="width: 60%; min-height: 500px; float: left;">
+      <render-tree [itemId]="itemId" [schema]="schema" [data]="data" [counter]="0"></render-tree>
+    </div>
+    <textarea style="padding:10px;font-size:11px;width: 40%; height: 800px;  float: left;">{{jsonld | json}}</textarea>
+  </div>
 </div>

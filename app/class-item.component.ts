@@ -38,7 +38,7 @@ export class ClassItemComponent implements OnInit {
     }
     
     startWizard(classItem) {
-        let link = ['Wizard', { id: classItem['@id'] }];
+        let link = ['Inputs', { id: classItem['@id'] }];
         this._router.navigate(link);
     }
 

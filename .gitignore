@@ -46,15 +46,12 @@ docs
 lib
 test
 tmp
-=======
-node_modules
 
 # Optional npm cache directory
 .npm
 
 # Optional REPL history
 .node_repl_history
->>>>>>> d2a959afe10da8fc98fbd9e9a029963f4a38f08c
 
 # vim
 

@@ -1,4 +1,35 @@
 .btn {
   padding:2px;
   font-size:12px;
+  padding: 3px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+.form-group {
+  background-color: #C7CBCE;
+  padding:5px;
+  border-left: 1px solid #efefef;
+  margin:0px;
+  padding:10px 20px;
+}
+
+h4 {
+  color: #990000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-control {
+  margin-top:2px;
+  font-size: 12px;
+}
+
+.comment {
+  font-family: "Lucida Grande" , "Lucida Sans Unicode" , Verdana, Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  margin-bottom:5px;
 }

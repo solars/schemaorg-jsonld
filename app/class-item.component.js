@@ -41,7 +41,7 @@ System.register(['angular2/core', 'angular2/router', './schema.service', 'rxjs/R
                     this.selectedClassItem = classItem;
                 };
                 ClassItemComponent.prototype.startWizard = function (classItem) {
-                    var link = ['Wizard', { id: classItem['@id'] }];
+                    var link = ['Inputs', { id: classItem['@id'] }];
                     this._router.navigate(link);
                 };
                 __decorate([
