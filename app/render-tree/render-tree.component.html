@@ -1,8 +1,11 @@
-<div class="form-group" *ngFor="#property of properties; " [style.marginLeft]="counter * 30 + 'px'" style="margin-left: {{counter * 10}}px">
+<div class="form-group" *ngFor="#property of properties; " [style.marginLeft]="counter * 20 + 'px'">
 
   <h4>
     {{property.label}} 
   </h4>
+   <div class="comment">
+    {{property.comment}} 
+  </div>
 
   <div>
     <span class="selection" *ngFor="#concept of property.range; #i = index">
@@ -15,16 +18,16 @@
     <div [ngSwitch]="property.range[chosenRanges[property.label]]">
 
       <div *ngSwitchWhen="'schema:Text'">
-        <input type="text" (change)="changeProperty(property.label, $event.target.value)">
+        <input class="form-control" type="text" (change)="changeProperty(property.label, $event.target.value)">
       </div>
       <div *ngSwitchWhen="'schema:URL'">
-        <input type="text" (change)="changeProperty(property.label, $event.target.value)">
+        <input class="form-control" type="text" (change)="changeProperty(property.label, $event.target.value)">
       </div>
       <div *ngSwitchWhen="'schema:Number'">
-        <input type="text" (change)="changeProperty(property.label, $event.target.value)">
+        <input class="form-control" type="text" (change)="changeProperty(property.label, $event.target.value)">
       </div>
       <div *ngSwitchWhen="'schema:Integer'">
-        <input type="text" (change)="changeProperty(property.label, $event.target.value)">
+        <input class="form-control" type="text" (change)="changeProperty(property.label, $event.target.value)">
       </div>
 
       <div *ngSwitchDefault>
