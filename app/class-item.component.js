@@ -52,6 +52,7 @@ System.register(['angular2/core', 'angular2/router', './schema.service', 'rxjs/R
                     core_1.Component({
                         selector: 'class-item',
                         templateUrl: 'app/class-item.component.html',
+                        styleUrls: ['app/class-item.component.css'],
                         directives: [ClassItemComponent]
                     }), 
                     __metadata('design:paramtypes', [schema_service_1.SchemaService, router_1.Router])

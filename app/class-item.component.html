@@ -1,14 +1,7 @@
-<div *ngIf="subClasses">
-    <ul *ngIf="schema && subClasses">
-        <li *ngFor="#subClass of subClasses">
-            {{subClass.label}}
-            <button class="btn btn-sm" (click)="startWizard(subClass)"><i class="fa fa-plus"></i></button>
-            <span *ngIf="schema.subclassesOf(subClass['@id']).length > 0"  (click)="onSelect(subClass)">
-                <i class="fa fa-chevron-down"></i>
-            </span>
-            <div *ngIf="selectedClassItem && subClass['@id'] == selectedClassItem['@id']">
-                <class-item [classItem]="subClass"></class-item>
-            </div>
-        </li>
-    </ul>
+<div *ngIf="schema && subClasses">
+  <div *ngFor="#subClass of subClasses">
+    <button class="btn btn-default" (click)="startWizard(subClass)">
+      {{subClass.label}}
+    </button>
+  </div>
 </div>
