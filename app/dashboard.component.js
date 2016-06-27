@@ -43,6 +43,10 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', './schema.
                         _this.schema = schema;
                     });
                 };
+                DashboardComponent.prototype.startWizard = function (label) {
+                    var link = ['Inputs', { id: "schema:" + label }];
+                    this._router.navigate(link);
+                };
                 DashboardComponent = __decorate([
                     core_1.Component({
                         selector: 'my-dashboard',

@@ -31,7 +31,11 @@ export class DashboardComponent implements OnInit {
         this.schema = schema;
     );
 
+      }
 
+      startWizard(label) {
+        let link = ['Inputs', { id: "schema:"+label}];
+        this._router.navigate(link);
       }
 
   }

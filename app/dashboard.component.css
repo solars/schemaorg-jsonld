@@ -1,0 +1,15 @@
+.form-group {
+  background-color: #C7CBCE;
+  padding:5px;
+  border-left: 1px solid #efefef;
+  margin:0px;
+  padding:10px 20px;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: white;
+}
