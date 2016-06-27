@@ -39,8 +39,8 @@ build/Release
 
 /tools/**/*.js
 gulpfile.js
-dist
-dev
+# dist
+# dev
 docs
 lib
 test
