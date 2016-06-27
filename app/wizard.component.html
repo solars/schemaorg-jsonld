@@ -1,0 +1,19 @@
+<div *ngIf="model && schema" class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>{{classItem.label}}</h2>
+      <div>
+        {{classItem.comment}}
+      </div>
+      <br />
+      <form class="container">
+        <fieldset class="form-group" *ngFor="#property of properties">
+          <input-item [property]="property"></input-item>
+        </fieldset>
+      </form>
+    </div>
+    <div class="col-sm-6">
+      <textarea style="height: 100%" class="form-control">{{jsonld}}</textarea>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div [ngSwitch]="property.range[0]">
+
+  <h4 class="form-control-label">
+    {{property.label}}
+  </h4>
+
+  <div *ngSwitchWhen="'schema:Text'">
+    <input [(ngModel)]="inputs[property['@id']]" type="text" class="form-control" id="{{property.label}}"/>
+  </div>
+
+  <div *ngSwitchWhen="'schema:URL'">
+    <input [(ngModel)]="inputs[property['@id']]" type="text" class="form-control" id="{{property.label}}"/>
+  </div>
+
+  <div *ngSwitchWhen="'schema:Numeric'">
+    <input [(ngModel)]="inputs[property['@id']]" type="text" class="form-control" id="{{property.label}}"/>
+  </div>
+
+  <div *ngSwitchDefault>
+    --conceptinput range: {{property.range}} --
+  </div>
+
+  <!--<small class="text-muted">[{{property.range}}]</small>-->
+  <small [innerHTML]="property.comment" class="text-muted"></small>
+</div>

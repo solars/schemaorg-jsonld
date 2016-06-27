@@ -1,0 +1,15 @@
+<div *ngIf="schema" class="container">
+
+  <div>
+    <h2> 
+      {{classItem.label}}
+    </h2>
+    <div> 
+      {{classItem.comment}}
+    </div>
+  <div style="width: 50%; min-height: 500px; float: left;">
+    <render-tree [itemId]="itemId" [schema]="schema" [data]="data" [counter]="0"></render-tree>
+  </div>
+  <textarea style="width: 49%; height: 500px;  float: left;">{{jsonld | json}}</textarea>
+</div>
+</div>

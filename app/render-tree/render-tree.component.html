@@ -1,0 +1,38 @@
+<div class="form-group" *ngFor="#property of properties; " [style.marginLeft]="counter * 30 + 'px'" style="margin-left: {{counter * 10}}px">
+
+  <h4>
+    {{property.label}} 
+  </h4>
+
+  <div>
+    <span class="selection" *ngFor="#concept of property.range; #i = index">
+      <button class="btn btn-default" type="button" (click)="setChosenRange(i, property);">{{concept}}</button>
+      <!--<button [ngStyle]="{'color': color}" class="btn btn-default" type="button" (click)="setChosenRange(i, property);$parent.color='red';">{{concept}}</button>-->
+    </span>
+  </div>
+
+  <div *ngIf="chosenRanges[property.label] >= 0">
+    <div [ngSwitch]="property.range[chosenRanges[property.label]]">
+
+      <div *ngSwitchWhen="'schema:Text'">
+        <input type="text" (change)="changeProperty(property.label, $event.target.value)">
+      </div>
+      <div *ngSwitchWhen="'schema:URL'">
+        <input type="text" (change)="changeProperty(property.label, $event.target.value)">
+      </div>
+      <div *ngSwitchWhen="'schema:Number'">
+        <input type="text" (change)="changeProperty(property.label, $event.target.value)">
+      </div>
+      <div *ngSwitchWhen="'schema:Integer'">
+        <input type="text" (change)="changeProperty(property.label, $event.target.value)">
+      </div>
+
+      <div *ngSwitchDefault>
+        <render-tree [schema]="schema" [itemId]="property.range[chosenRanges[property.label]]" [data]="data[property.label]" [counter]="counter+1"></render-tree>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+

@@ -1,0 +1,9 @@
+<h3>Schema.org concepts</h3>
+<div *ngIf="schema"> 
+  <ul>
+    <li *ngFor="#item of schema.concepts">
+    {{item.label}}
+    <class-item [classItem]="item"></class-item>
+    </li>
+  </ul>
+</div>
