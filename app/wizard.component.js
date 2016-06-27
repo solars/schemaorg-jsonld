@@ -96,9 +96,10 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './schema.
                         providers: [http_1.HTTP_PROVIDERS, schema_service_1.SchemaService, WizardComponent],
                         directives: [WizardComponent, input_item_component_1.InputItemComponent]
                     }), 
-                    __metadata('design:paramtypes', [schema_service_1.SchemaService, router_1.RouteParams])
+                    __metadata('design:paramtypes', [schema_service_1.SchemaService, (typeof (_a = typeof router_1.RouteParams !== 'undefined' && router_1.RouteParams) === 'function' && _a) || Object])
                 ], WizardComponent);
                 return WizardComponent;
+                var _a;
             }());
             exports_1("WizardComponent", WizardComponent);
         }

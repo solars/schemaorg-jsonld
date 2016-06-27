@@ -65,9 +65,10 @@ System.register(['angular2/core', './render-tree/render-tree.component', 'angula
                         providers: [http_1.HTTP_PROVIDERS, schema_service_1.SchemaService, RecursiveInputsAppComponent],
                         directives: [RecursiveInputsAppComponent, render_tree_component_1.RenderTreeComponent]
                     }), 
-                    __metadata('design:paramtypes', [schema_service_1.SchemaService, router_1.RouteParams])
+                    __metadata('design:paramtypes', [schema_service_1.SchemaService, (typeof (_a = typeof router_1.RouteParams !== 'undefined' && router_1.RouteParams) === 'function' && _a) || Object])
                 ], RecursiveInputsAppComponent);
                 return RecursiveInputsAppComponent;
+                var _a;
             }());
             exports_1("RecursiveInputsAppComponent", RecursiveInputsAppComponent);
         }
