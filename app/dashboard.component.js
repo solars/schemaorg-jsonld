@@ -55,10 +55,9 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', './schema.
                         styleUrls: ['app/dashboard.component.css'],
                         directives: [class_item_component_1.ClassItemComponent]
                     }), 
-                    __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _b) || Object, schema_service_1.SchemaService])
+                    __metadata('design:paramtypes', [router_1.Router, http_1.Http, schema_service_1.SchemaService])
                 ], DashboardComponent);
                 return DashboardComponent;
-                var _a, _b;
             }());
             exports_1("DashboardComponent", DashboardComponent);
         }

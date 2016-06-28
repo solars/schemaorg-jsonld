@@ -26,6 +26,9 @@
       <div *ngSwitchWhen="'schema:Number'">
         <input class="form-control" type="text" (change)="changeProperty(property.label, $event.target.value)">
       </div>
+      <div *ngSwitchWhen="'schema:Date'">
+        <input class="form-control" type="text" (change)="changeProperty(property.label, $event.target.value)">
+      </div>
       <div *ngSwitchWhen="'schema:Integer'">
         <input class="form-control" type="text" (change)="changeProperty(property.label, $event.target.value)">
       </div>

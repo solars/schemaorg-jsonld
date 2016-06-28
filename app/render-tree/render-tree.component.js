@@ -53,6 +53,9 @@ System.register(['angular2/core', '../schema', '../schema.service'], function(ex
                                 case 'schema:URL':
                                     this.data[property.label] = '';
                                     break;
+                                case 'schema:Date':
+                                    this.data[property.label] = '';
+                                    break;
                                 case 'schema:Numeric':
                                     this.data[property.label] = 0;
                                     break;

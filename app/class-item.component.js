@@ -55,10 +55,9 @@ System.register(['angular2/core', 'angular2/router', './schema.service', 'rxjs/R
                         styleUrls: ['app/class-item.component.css'],
                         directives: [ClassItemComponent]
                     }), 
-                    __metadata('design:paramtypes', [schema_service_1.SchemaService, (typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object])
+                    __metadata('design:paramtypes', [schema_service_1.SchemaService, router_1.Router])
                 ], ClassItemComponent);
                 return ClassItemComponent;
-                var _a;
             }());
             exports_1("ClassItemComponent", ClassItemComponent);
         }

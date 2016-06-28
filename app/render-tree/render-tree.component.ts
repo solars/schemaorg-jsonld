@@ -50,6 +50,9 @@ export class RenderTreeComponent implements OnInit {
           case 'schema:URL':
             this.data[property.label] = '';
           break;
+          case 'schema:Date':
+            this.data[property.label] = '';
+          break;
           case 'schema:Numeric':
             this.data[property.label] = 0;
           break;
